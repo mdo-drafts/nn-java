@@ -5,11 +5,16 @@ import java.util.List;
  */
 public class Neuron {
 
-    private Double bias;
+    private double bias;
 
     private List<Double> weights;
 
-    public Neuron(Double bias, List<Double> weights) {
+    /**
+     * Assumption: neuron can't exist without function
+     */
+    private ActivationFunction function = new SigmoidFunction();
+
+    public Neuron(double bias, List<Double> weights) {
         this.bias = bias;
         this.weights = weights;
     }
