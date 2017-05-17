@@ -18,4 +18,12 @@ public class Neuron {
         this.bias = bias;
         this.weights = weights;
     }
+
+    public double getBias() {
+        return bias;
+    }
+
+    public List<Double> getWeights() {
+        return weights;
+    }
 }
